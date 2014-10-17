@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+       xsi:schemaLocation="http://www.springframework.org/schema/context
+          http://www.springframework.org/schema/context/spring-context-3.1.xsd
+          http://www.springframework.org/schema/data/mongo
+          http://www.springframework.org/schema/data/mongo/spring-mongo-1.0.xsd
+          http://www.springframework.org/schema/beans
+          http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+
+    <bean id="stopsDao"
+          class="net.lojika.gtfs.dao.impl.StopsDaoImpl">
+    </bean>
+    
+    <bean id="routesDao"
+          class="net.lojika.gtfs.dao.impl.RoutesDaoImpl">
+    </bean>
+    
+    <bean id="routesCdkDao"
+          class="net.lojika.gtfs.dao.impl.RoutesCdkDaoImpl">
+    </bean>
+    
+     <bean id="tripLineDao"
+          class="net.lojika.gtfs.dao.impl.TripLineDaoImpl">
+    </bean>
+    
+     <bean id="tripsDao"
+          class="net.lojika.gtfs.dao.impl.TripsDaoImpl">
+    </bean>
+    
+      <bean id="stopTimesDao"
+          class="net.lojika.gtfs.dao.impl.StopTimesDaoImpl">
+    </bean>
+    
+</beans>
